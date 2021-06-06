@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "EwZidUV0ySVvx+g+9UTimff3+LH4UmURYcLOFsGlcmMdmrNOxySb0Q7GK8iKZ5G/FKgxxjeb1U2EcPP96ksVEQ==",
+  "dgSpecHash": "2pMiajnW46Jc80Fuy0QUHivBQzsGEZi1zwJaLf8ZiMOuR3h/gYJR9BIK2lABCSLtv9pyK9wR6h5O3tS+kokCmQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Freaqke\\Desktop\\S6-individueel\\CommentAPI\\CommentAPI\\CommentAPI.csproj",
   "expectedPackageFiles": [
@@ -47,6 +47,7 @@
     "C:\\Users\\Freaqke\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\Freaqke\\.nuget\\packages\\microsoft.netcore.targets\\1.1.3\\microsoft.netcore.targets.1.1.3.nupkg.sha512",
     "C:\\Users\\Freaqke\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\Freaqke\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.13\\microsoft.visualstudio.azure.containers.tools.targets.1.10.13.nupkg.sha512",
     "C:\\Users\\Freaqke\\.nuget\\packages\\microsoft.win32.primitives\\4.3.0\\microsoft.win32.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\Freaqke\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\Freaqke\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
