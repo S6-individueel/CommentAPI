@@ -1,9 +1,11 @@
 using CommentAPI.CommentData;
 using CommentAPI.Models;
+using CommentAPI.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Azure.ServiceBus;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -36,6 +38,11 @@ namespace CommentAPI
             Configuration.GetConnectionString("DefaultConnection")));
 
             services.AddScoped<ICommentData, SqlCommentData>();
+
+            services.AddHostedService<MessageConsumer>();
+
+            services.AddSingleton<ISubscriptionClient>(x =>
+            new SubscriptionClient(Configuration.GetConnectionString("AzureServiceBus"), "deleteuser", "DeleteUserSubscription"));
 
             services.AddSwaggerGen(c =>
             {

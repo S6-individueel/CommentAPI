@@ -99,10 +99,5 @@ namespace CommentAPI.Controllers
             }
             return NotFound($"Comments for the user with id: {id} was not found");
         }
-
-        public IActionResult Index()
-        {
-            return View();
-        }
     }
 }

@@ -20,6 +20,8 @@ namespace CommentAPI.CommentData
 
         void DeleteComment(Comment comment);
 
+        void DeleteComments(Guid id);
+
         Comment ModifyComment(Comment comment);
     }
 }

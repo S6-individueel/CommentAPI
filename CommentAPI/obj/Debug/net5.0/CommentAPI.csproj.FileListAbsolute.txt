@@ -69,3 +69,13 @@ C:\Users\Freaqke\Desktop\S6-individueel\CommentAPI\CommentAPI\obj\Debug\net5.0\C
 C:\Users\Freaqke\Desktop\S6-individueel\CommentAPI\CommentAPI\obj\Debug\net5.0\ref\CommentAPI.dll
 C:\Users\Freaqke\Desktop\S6-individueel\CommentAPI\CommentAPI\obj\Debug\net5.0\CommentAPI.pdb
 C:\Users\Freaqke\Desktop\S6-individueel\CommentAPI\CommentAPI\obj\Debug\net5.0\CommentAPI.genruntimeconfig.cache
+C:\Users\Freaqke\Desktop\S6-individueel\CommentAPI\CommentAPI\bin\Debug\net5.0\Microsoft.Azure.Amqp.dll
+C:\Users\Freaqke\Desktop\S6-individueel\CommentAPI\CommentAPI\bin\Debug\net5.0\Microsoft.Azure.ServiceBus.dll
+C:\Users\Freaqke\Desktop\S6-individueel\CommentAPI\CommentAPI\bin\Debug\net5.0\Microsoft.Azure.Services.AppAuthentication.dll
+C:\Users\Freaqke\Desktop\S6-individueel\CommentAPI\CommentAPI\bin\Debug\net5.0\Microsoft.IdentityModel.Clients.ActiveDirectory.Platform.dll
+C:\Users\Freaqke\Desktop\S6-individueel\CommentAPI\CommentAPI\bin\Debug\net5.0\Microsoft.IdentityModel.Clients.ActiveDirectory.dll
+C:\Users\Freaqke\Desktop\S6-individueel\CommentAPI\CommentAPI\bin\Debug\net5.0\Azure.Core.dll
+C:\Users\Freaqke\Desktop\S6-individueel\CommentAPI\CommentAPI\bin\Debug\net5.0\Azure.Core.Amqp.dll
+C:\Users\Freaqke\Desktop\S6-individueel\CommentAPI\CommentAPI\bin\Debug\net5.0\Azure.Messaging.ServiceBus.dll
+C:\Users\Freaqke\Desktop\S6-individueel\CommentAPI\CommentAPI\bin\Debug\net5.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Freaqke\Desktop\S6-individueel\CommentAPI\CommentAPI\bin\Debug\net5.0\System.Memory.Data.dll

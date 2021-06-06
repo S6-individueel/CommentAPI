@@ -30,6 +30,15 @@ namespace CommentAPI.CommentData
             _commentsContext.SaveChanges();
         }
 
+        public void DeleteComments(Guid id)
+        {
+            foreach (var comment in _commentsContext.Comments.Where(r => r.UserId == id))
+            {
+                _commentsContext.Remove(comment);
+                _commentsContext.SaveChanges();
+            }
+        }
+
         public List<Comment> GetAllComments()
         {
             return _commentsContext.Comments.ToList();
