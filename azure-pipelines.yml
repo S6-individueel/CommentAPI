@@ -11,7 +11,7 @@ resources:
 variables:
   # Container registry service connection established during pipeline creation
   dockerRegistryServiceConnection: '60928adb-a21b-42e9-9056-bf10dc562103'
-  imageRepository: 'sindividueelcommentapi'
+  imageRepository: 'commentapi'
   containerRegistry: 'acrvod.azurecr.io'
   dockerfilePath: '$(Build.SourcesDirectory)/CommentAPI/Dockerfile'
   tag: '$(Build.BuildId)'
