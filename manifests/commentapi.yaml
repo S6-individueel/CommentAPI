@@ -1,0 +1,51 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: commentapi
+  labels: 
+    app: commentapi
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: commentapi
+  template:
+    metadata:
+      labels:
+        app: commentapi
+    spec:
+      containers:
+      - name: commentapi
+        image: acrvod.azurecr.io/commentapi:v1
+        imagePullPolicy: IfNotPresent
+        ports:
+          - containerPort: 80
+        env:
+          - name: ASPNETCORE_ENVIRONMENT
+            value: Development
+          - name: MYSQL_DBCONNECTION
+            value: Server=mysql;Port=3306;Database=commentdb;Uid=root;Pwd=Mofo121191!;
+        resources:
+          requests:
+            memory: "64Mi"
+            cpu: "0.1"
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+      imagePullSecrets:
+        - name: acr-secret
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: commentapi
+  labels:
+    app: commentapi
+spec:
+  selector:
+    app: commentapi
+  ports:
+  - protocol: TCP
+    port: 80
+
+
