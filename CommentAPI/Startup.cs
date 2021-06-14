@@ -34,8 +34,9 @@ namespace CommentAPI
 
             services.AddControllers();
 
-            services.AddDbContextPool<CommentsContext>(options => options.UseMySQL(
-            Configuration.GetConnectionString("DefaultConnection")));
+            var connection = Configuration["MYSQL_DBCONNECTION"] ?? Configuration.GetConnectionString("DefaultConnection");
+
+            services.AddDbContextPool<CommentsContext>(options => options.UseMySQL(connection));
 
             services.AddScoped<ICommentData, SqlCommentData>();
 
@@ -51,7 +52,7 @@ namespace CommentAPI
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, CommentsContext context)
         {
             if (env.IsDevelopment())
             {
@@ -70,6 +71,8 @@ namespace CommentAPI
             {
                 endpoints.MapControllers();
             });
+
+            context.Database.Migrate();
         }
     }
 }
